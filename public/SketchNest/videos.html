@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@100..900&family=Sevillana&family=Sigmar&display=swap"
+        rel="stylesheet">
+          <script src="flot_chat.js">
+        
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+     <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light navv">
+            <div class="container-fluid">
+                <a class="navbar-brand nav_brand" href="index.html">
+                    <i class="fa-solid fa-palette"></i> SketchNest
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav right-align">
+                        <li class="nav-item">
+                            <a class="nav-link link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link " href="gallery.html">Art Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link active" href="videos.html">Sketch Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="learn.html">Learn to Draw</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="sketchbot.html">SketchBot</a>
+                        </li>
+                       <!-- Add Logout button here -->
+                        <li class="nav-item ms-auto right">
+                            <a class="nav-link link btn btn-sm btn-outline-light" href="/logout">Logout</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Video Section -->
+    <div class="container">
+        <div class="video">
+            <h1 class="heading">Sketch Video Tutorials</h1>
+            <p class="subtext">Choose your level and start learning step by step!</p>
+
+            <div class="tabs">
+                <button onclick="filterVideos('beginner')">Beginner</button>
+                <button onclick="filterVideos('intermediate')">Intermediate</button>
+                <button onclick="filterVideos('advanced')">Advanced</button>
+            </div>
+
+            <div class="video-gallery">
+
+                <!-- Beginner Videos -->
+                <div class="video-card beginner">
+                    <iframe src="https://www.youtube.com/embed/bmeXFdIr8sI?si=Yp4RKmcUc7zaZgMf" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Introduction to Drawing Tools</h3>
+                    <p>Types of pencils, erasers, paper, and their uses</p>
+                </div>
+                <div class="video-card beginner">
+                    <iframe src="https://www.youtube.com/embed/tpeYnGrwhH8?si=hHpB9EeOa28cAUIN" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Basic Lines and Shapes</h3>
+                    <p>Drawing straight lines, curves, circles, squares</p>
+                </div>
+                <div class="video-card beginner">
+                    <iframe src="https://www.youtube.com/embed/225mwT-gGu8?si=tgUmaXkvBRxg0GtA" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Shading Basics</h3>
+                    <p>Light source, pressure control, gradients.</p>
+                </div>
+                <div class="video-card beginner">
+                    <iframe src="https://www.youtube.com/embed/73gTXNq3jsQ?si=bgG1N96bTMoPPKnc" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Drawing 2D Objects</h3>
+                    <p>Cubes, spheres, cones, cylinders</p>
+                </div>
+                <div class="video-card beginner">
+                    <iframe src="https://www.youtube.com/embed/9hz_GX0eD5w?si=WXK2GCYpI87tu19N" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Basic Shapes & Shading</h3>
+                    <p>Learn the fundamentals of sketching with simple forms.</p>
+                </div>
+
+                <div class="video-card beginner">
+                    <iframe src="https://www.youtube.com/embed/pMC0Cx3Uk84?si=O7RRVrk9lAu9PuF8" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Pencil Control & Pressure</h3>
+                    <p>Essential pencil techniques for beginners.</p>
+                </div>
+                <div class="video-card beginner">
+                    <iframe src="https://www.youtube.com/embed/PKkzVBNIhow?si=0cKwas6JgXuVSq6H" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Texture Practice</h3>
+                    <p>Brick, wood, fur, and fabric</p>
+                </div>
+                <div class="video-card beginner">
+                    <iframe src="https://www.youtube.com/embed/cdSzAOgSuew?si=IDHiEFIdVPkw6AWT" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Basic Face Structure</h3>
+                    <p>Essential pencil techniques for beginners.</p>
+                </div>
+
+                <!-- Intermediate Videos -->
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/tpeYnGrwhH8?si=kocskVwykF6m4Vd0" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> 3D Form Construction</h3>
+                    <p>Converting 2D shapes into 3D forms</p>
+                </div>
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/JHQ-d0CDQIg?si=DBNwXXVNekiKvuk4" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Portrait Basics</h3>
+                    <p>Start drawing human faces with proportions and guides.</p>
+                </div>
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/rCveT3Hg5Q4?si=RDq_ER4_N3Vqm1AN" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Drawing the Human Head (All Angles)</h3>
+                    <p>Loomis method, side-view, tilted angles</p>
+                </div>
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/17u2hjd9sgc?si=9_j1MsBXJKbNZxoV" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Basic Anatomy</h3>
+                    <p>Torso, arms, legs — simplified muscle blocks</p>
+                </div>
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/Cw-IS9DYuUU?si=EnMZ-mwQ3AsOqZDG" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Detailed Facial Features</h3>
+                    <p>Eyes, nose, lips, ears – proportions and placement</p>
+                </div>
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/GNfe_ypQG9w?si=8qzN_3Efp0wVspYF" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Gesture Drawing</h3>
+                    <p>Capturing movement and flow quickly</p>
+                </div>
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/eAhHgPZASYQ?si=A_AGBAx1Ipt6EYkB" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Hands and Feet</h3>
+                    <p>Basic hand/foot shapes and gesture</p>
+                </div>
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/tNJ6pIKelkg?si=Xsx8ZbB-jjbMxq-h" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Drawing Animals</h3>
+                    <p> Simple animal forms and textures</p>
+                </div>
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/teTXL-71rRY?si=oGPzEjDDTjNtv1uA" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Landscape Sketching</h3>
+                    <p> Trees, rocks, clouds, and natural forms</p>
+                </div>
+                <div class="video-card intermediate">
+                    <iframe src="https://www.youtube.com/embed/FmsSbpsB5Vs?si=dmdvvnde2WoA1w_0" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Light and Shadow Techniques</h3>
+                    <p> Core shadows, cast shadows, highlights</p>
+                </div>
+
+                <!-- Advanced Videos -->
+                <div class="video-card advanced">
+                    <iframe src="https://www.youtube.com/embed/zqNZ9df0tho?si=P-lcgu9x13EmfmXg" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Realistic Eye Sketching</h3>
+                    <p>Draw photorealistic eyes using shadows and highlights.</p>
+                </div>
+                <div class="video-card advanced">
+                    <iframe src="https://www.youtube.com/embed/Zi0zRKOm6GM?si=UHuJxljKdE8Ujr-8" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Portrait Drawing</h3>
+                    <p> Realistic proportions, skin texture, lighting</p>
+                </div>
+                <div class="video-card advanced">
+                    <iframe src="https://www.youtube.com/embed/8wm9ti-gzLM?si=e7Qop3-3iX7Bqr-C" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Stylized Character Design</h3>
+                    <p> Cartoon, anime, or stylized figure drawing</p>
+                </div>
+                <div class="video-card advanced">
+                    <iframe src="https://www.youtube.com/embed/XtRwwIuzqSw?si=MbwU9dzAZ_CFIf2G" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3>Dynamic Poses & Foreshortening</h3>
+                    <p> Action poses, drawing from extreme angles</p>
+                </div>
+                <div class="video-card advanced">
+                    <iframe src="https://www.youtube.com/embed/d07NanfYT8U?si=KX4vObbTkVn6T1Dt" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Mastering Clothing & Folds</h3>
+                    <p> Drapery, wrinkles, and flow of cloth</p>
+                </div>
+                <div class="video-card advanced">
+                    <iframe src="https://www.youtube.com/embed/embYkODkzcs?si=J5OA2bPHzReCwsT1" frameborder="0"
+                        allowfullscreen></iframe>
+                    <h3> Emotion & Expression in Faces</h3>
+                    <p> Subtle emotional cues in portraiture</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="container">
+        <!-- Floating Bot Icon -->
+        <div id="chatbot-icon">💬</div>
+
+        <!-- Chatbot Modal -->
+        <div id="chatbot-modal">
+            <div class="chatbot-header">
+                <span>🎨 SketchNest AI Bot</span>
+                <button id="close-btn">×</button>
+            </div>
+            <div class="chatbot-body" id="chat-messages">
+                <div class="bot-message">👋 Hello! I’m your SketchNest bot. Ask me anything about sketching!</div>
+            </div>
+            <div class="chatbot-box">
+                <input type="text" id="user-input" placeholder="Type your question..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+     <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <div class="foot">
+                        <h1>SketchNest</h1>
+                        <p>Master the art of sketching through interactive learning and AI-powered guidance.</p>
+                        <!-- <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+                        <p><i class="fa-solid fa-phone"></i> +012 345 67890</p>
+                        <p><i class="fa-solid fa-envelope"></i> info@example.com</p> -->
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+
+
+                    <div class="foot">
+
+                        <h1>Quick Link</h1>
+                        <p><a href="index.html">HOME</a> </p>
+                        <p><a href="gallery.html">ART GALLERY</a> </p>
+                        <p><a href="videos.html">SKETCH VIDEOS</a> </p>
+                        <p><a href="learn.html"> LEARN TO DRAW</a></p>
+                        <p><a href="sketchbot.html"> SKETCHBOT</a></p>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <div class="foot">
+                        <h1>Gallery</h1>
+                        <img src="image/img1.webp" alt="">
+                        <img src="image/img2.jpg" alt="">
+                        <img src="image/img3.jpg" alt="">
+                        <img src="image/img4.webp" alt="">
+                        <img src="image/img5.jpg" alt="">
+                        <img src="image/img6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <div class="foot end">
+                        <h1>Newsletter</h1>
+                        <p>Subscribe for weekly sketching tips and challenges.</p>
+                        <span><input type="email" class="email" name="email" id="email" placeholder="Email Address">
+                            <a href="login.html"><button class="btnn" aria-current="page"><i
+                                        class="fa-brands fa-telegram"></i></button></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="foot-center">
+
+                            <p>© 2025 SketchNest. All rights reserved</p>
+
+                            <p>Designed by Komal Maurya</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="tab.js"></script>
+    <!-- <script>
+        // Chatbot toggle
+        function toggleChatbot() {
+            const modal = document.getElementById("chatbot-modal");
+            modal.style.display = (modal.style.display === "block") ? "none" : "block";
+        }
+    </script> -->
+  
+</body>
+
+</html>

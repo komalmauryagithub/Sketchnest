@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', sans-serif !important;
+  margin: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+
+
+
+ .containn {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  line-height: 1.6;
+ 
+}
+.head22 {
+    color: #6a0dad;
+    padding-top: 90px;
+}
+.head2 {
+  color: #6a0dad;
+  /* margin-top: 80px; */
+}
+.nav_brand {
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #6A0DAD !important;
+}
+.head3 {
+  margin-top: 50px;
+  color: #444;
+}
+
+section ul {
+  padding-left: 100px;
+}
+
+.ask-section {
+    margin: 50px;
+    text-align: center;
+    background-color: #f3eaff;
+    padding: 72px;
+    border-radius: 10px;
+}
+.ask-section a{
+   color: white !important;
+  text-decoration: none;
+}
+
+.ask-btn {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ask-btn:hover {
+  background-color: #5a029d;
+}
+
+body {
+    background-color: white;
+
+}
+
+pre a {
+    text-decoration: none;
+    color: white !important;
+}
+
+pre a:hover {
+    color: #9923ed !important;
+}
+
+.navv {
+    background-color: white;
+    width: 100%;
+    position: fixed !important;
+    z-index: 100 !important;
+    border-bottom: 3px solid black;
+    box-shadow: 16px 0px 33px black;
+}
+
+.nav_brand {
+    font-size: 30px !important;
+    font-weight: bold;
+    color: #6A0DAD !important;
+}
+
+.link {
+    font-weight: bold !important;
+    font-size: 17px !important;
+    margin: 10px;
+    color: black !important;
+    border-radius: 20px !important;
+    
+}
+
+.link:hover {
+    color: #6A0DAD !important;
+    /* background-color: rgb(214, 210, 210); */
+    border-radius: 20px !important;
+}
+.link:active {
+    color: #6A0DAD !important;
+    background-color: rgb(214, 210, 210);
+    border-radius: 20px !important;
+}
+
+
+.btn {
+    background-color: #6A0DAD !important;
+    color: white !important;
+    margin-left: 50px;
+
+}
+
+.btn:hover {
+    background-color: blueviolet !important;
+    color: white !important;
+}
+
+.right-align {
+    margin-left: 316px;
+
+}
+
+
+
+.end .link {
+    background-color: #6A0DAD !important;
+}
+
+.end .link:hover {
+    background-color: #9964c0 !important;
+}

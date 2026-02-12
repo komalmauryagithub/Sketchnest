@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manufacturing+Consent&family=Sevillana&family=Sigmar&display=swap"
+        rel="stylesheet">
+    <script src="flot_chat.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navv">
+            <div class="container-fluid">
+                <a class="navbar-brand nav_brand" href="index.html">
+                    <i class="fa-solid fa-palette"></i> SketchNest
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav right-align">
+                        <li class="nav-item">
+                            <a class="nav-link link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="gallery.html">Art Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="videos.html">Sketch Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="learn.html">Learn to Draw</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="sketchbot.html">SketchBot</a>
+                        </li>
+                        <!-- Add Logout button here -->
+                        <li class="nav-item ms-auto right">
+                            <a class="nav-link link btn btn-sm btn-outline-light" href="/logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="over">
+                        <img src="image/draw.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption caption d-none d-sm-block">
+                            <h5>START YOUR ART JOURNEY TODAY</h5>
+                            <h1>DRAW, LEARN & GROW </h1>
+                            <h1> AT YOUR PACE</h1>
+                            <p>Join a vibrant community of learners,
+                                guided by AI-powered tools
+                                and expert sketch
+                                tutorials.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="over">
+                        <img src="image/sketch.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption caption d-none d-md-block">
+                            <h5>ELEVATE YOUR ART SKILLS</h5>
+                            <h1>LEARN TO DRAW – ANYTIME, ANYWHERE</h1>
+                            <h1> FROM YOUR HOME</h1>
+                            <p>With SketchNest, turn your passion into
+                                progress through structured
+                                lessons and real-time
+                                sketch support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="over">
+                        <img src="image/draw1.jpg " class="d-block w-100" alt="...">
+                        <div class="carousel-caption caption d-none d-md-block">
+                            <h5>UNLEASH YOUR CREATIVITY</h5>
+                            <h1>MASTER ART FROM HOME</h1>
+                            <p>SketchNest gives you tools, videos, and
+                                guidance to improve with
+                                every stroke.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon prev_icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon next_icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="box">
+                    <i class="fa-solid fa-users"></i>
+                    <h2>Inspiring Art Community</h2>
+                    <p>Join a thriving network of artists, share your work, and get inspired every day.</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="box">
+                    <i class="fa-solid fa-brush"></i>
+                    <h2>Step-by-Step Guides</h2>
+                    <p>Easy to follow tutorials for all levels.</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="box">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h2>Interactive Challenges</h2>
+                    <p>Boost creativity with daily drawing prompts and sketch missions.</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="box">
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>AI-Powered Help</h2>
+                    <p>Let our SketchBot guide your improvement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <img src="image/girl.jpg" class="img" alt="">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="info">
+
+                        <h5>ABOUT US</h5>
+                        <h1>Welcome to SketchNest</h1>
+                        <p class="p">"At SketchNest,
+                            creativity meets guidance. We believe that every individual has an artist
+                            within, waiting to be discovered. Through interactive lessons, curated galleries, AI-powered
+                            sketch tools, and inspiring video tutorials, we create a space where passion for art thrives
+                            and learning becomes a joyful journey."</p>
+                        <p class="p">"SketchNest is an
+                            innovative platform that empowers budding artists to explore, practice, and
+                            master their drawing skills. Whether you're a beginner or an advanced learner, we provide
+                            everything you need to grow."
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <div class="info_">
+                            <p class="p"><i class="fa-solid fa-arrow-right" style="color: #6A0DAD;"></i>
+                                Personalized Learning Paths</p>
+                            <p class="p"><i class="fa-solid fa-arrow-right" style="color: #6A0DAD;"></i>
+                                AI Feedback and Sketch References</p>
+                            <p class="p"><i class="fa-solid fa-arrow-right" style="color: #6A0DAD;"></i>
+                                Step-by-Step Sketch Tutorials</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <div class="info_">
+                            <p class="p"><i class="fa-solid fa-arrow-right" style="color: #6A0DAD;"></i>
+                                SketchBot Assistant</p>
+                            <p class="p"><i class="fa-solid fa-arrow-right" style="color: #6A0DAD;"></i>
+                                Progress Tracking Dashboard</p>
+                            <p class="p"><i class="fa-solid fa-arrow-right" style="color: #6A0DAD;"></i>
+                                Curated Art Gallery</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="about.html"><button class="btn1">Read More</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="bot">
+
+            <h5 class="px-3">INSTRUCTOR</h5>
+            <h1>SketchNest Bots</h1>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12"></div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <div class="boxx">
+                        <img src="image/bot.jpg" alt="">
+                        <a href="chat_ai.html"><button class="bot">SketchBot</button></a>
+                    </div>
+                    <p class="para">Need Help? Just Ask</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <div class="boxx">
+                        <img src="image/bot1.webp" alt="">
+                        <a href="sketch_ref.html"><button class="bot">Sketch Reference</button></a>
+                    </div>
+                    <p class="para">Let AI Be Your Art Mentor</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12"></div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-buttons">
+        <button onclick="showTab('challenge')">Challenge</button>
+        <button onclick="switchTab('gallery')">🖼️ Gallery</button>
+    </div>
+    <!-- CHALLENGE SECTION -->
+    <div id="challenge" class="tab-content" style="display: none;">
+        <div class="challenge-banner">
+            ✍️ Today’s Challenge: <strong id="challenge-title">Sketch a Dream City</strong>
+            <button class="submit-btn" onclick="toggleChallengeUpload()">Join</button>
+        </div>
+        <div id="challenge-upload-section" class="upload-section" style="display: none;">
+            <h3>Upload Your Challenge Sketch</h3>
+            <input type="file" id="challengeUpload" accept="image/*" onchange="previewImage('challenge')">
+
+            <div class="preview-container" id="preview-challenge" style="display: none;">
+                <p><strong>Preview:</strong></p>
+                <img id="preview-img-challenge">
+            </div>
+
+            <button class="submit-btn" onclick="submitImage('challenge')">Submit</button>
+            <p id="status-challenge"></p>
+        </div>
+    </div>
+    <!-- Gallery Tab -->
+    <div id="gallery" class="tab-content" style="display: none;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <h2>🎨 Gallery</h2>
+        </div>
+        <div id="gallery-container" class="gallery-grid"></div>
+    </div>
+    <!-- Floating Bot Icon -->
+    <div id="chatbot-icon">💬</div>
+
+    <!-- Chatbot Modal -->
+    <div id="chatbot-modal">
+        <div class="chatbot-header">
+            <span>🎨 SketchNest AI Bot</span>
+            <button id="close-btn">×</button>
+        </div>
+        <div class="chatbot-body" id="chat-messages">
+            <div class="bot-message">👋 Hello! I’m your SketchNest bot. Ask me anything about sketching!</div>
+        </div>
+        <div class="chatbot-box">
+            <input type="text" id="user-input" placeholder="Type your question..." />
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <div class="foot">
+                        <h1>SketchNest</h1>
+                        <p>Master the art of sketching through interactive learning and AI-powered guidance.</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <div class="foot">
+
+                        <h1>Quick Link</h1>
+                        <p><a href="index.html">HOME</a> </p>
+                        <p><a href="gallery.html">ART GALLERY</a> </p>
+                        <p><a href="videos.html">SKETCH VIDEOS</a> </p>
+                        <p><a href="learn.html"> LEARN TO DRAW</a></p>
+                        <p><a href="sketchbot.html"> SKETCHBOT</a></p>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <div class="foot">
+                        <h1>Gallery</h1>
+                        <img src="image/img1.webp" alt="">
+                        <img src="image/img2.jpg" alt="">
+                        <img src="image/img3.jpg" alt="">
+                        <img src="image/img4.webp" alt="">
+                        <img src="image/img5.jpg" alt="">
+                        <img src="image/img6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                    <div class="foot end">
+                        <h1>Newsletter</h1>
+                        <p>Subscribe for weekly sketching tips and challenges.</p>
+                        <span><input type="email" class="email" name="email" id="email" placeholder="Email Address">
+                            <a href="login.html"><button class="btnn" aria-current="page"><i
+                                        class="fa-brands fa-telegram"></i></button></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="foot-center">
+
+                            <p>© 2025 SketchNest. All rights reserved</p>
+
+                            <p>Designed by Komal Maurya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="tab.js"></script>
+</body>
+
+</html>

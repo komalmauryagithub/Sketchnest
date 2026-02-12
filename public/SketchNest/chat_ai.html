@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SketchNest ChatBot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+  <header class="head">
+    <span>🤖 SketchBot – Ask Me Anything</span>
+    <button class="back-button" onclick="goBack()">← Back</button>
+  </header>
+
+  <div id="chat-container">
+    <div id="messages">
+      <!-- Welcome message -->
+      <div class="message-row bot">
+        <img class="avatar" src="image/bott.png" alt="bot">
+        <div class="bot-msg">👋 Hi! I'm SketchBot. Ask me anything about sketching, techniques, tools, or tips!</div>
+      </div>
+    
+    </div>
+
+    <div id="chat-box">
+      <input type="text" id="user-input" placeholder="Type your question here..." />
+      <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+
+  <script src="tab.js">
+
+  </script>
+
+</body>
+
+</html>

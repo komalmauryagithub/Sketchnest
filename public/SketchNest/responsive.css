@@ -1,0 +1,769 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 375px) and (max-width: 425.98px) {
+    /* ---------------------------------home tab---------------------------------------------- */
+
+    .prev_icon {
+        position: absolute;
+        border: 2px solid white;
+        top: 147px !important;
+        left: 330px !important;
+        padding: 5px;
+        z-index: 1000 !important;
+    }
+
+    .next_icon {
+        position: absolute;
+        border: 2px solid white;
+        top: 186px !important;
+        padding: 5px;
+        z-index: 1000 !important;
+    }
+
+    .box {
+        width: 100%;
+        height: 190px;
+        background-color: #cfa9eb;
+        text-align: center;
+        color: black;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .box h2 {
+        font-size: 25px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .img {
+        width: 100%;
+        height: 382px;
+        margin-bottom: 37px;
+        margin-top: 30px;
+    }
+
+    .info h1 {
+        font-weight: bold;
+        margin-bottom: 18px;
+        font-size: 32px;
+    }
+
+    .btn1 {
+        background-color: #6A0DAD;
+        padding: 4px 6px;
+        color: white;
+        margin: 0 0 31px 20px !important;
+    }
+
+    .bot h1 {
+        font-weight: bold;
+        font-size: 31px;
+        margin-bottom: 30px;
+    }
+
+    .foot h1 {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        font-size: 38px;
+    }
+
+    .foot p a {
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .icons i {
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 12px;
+        margin-bottom: 20px !important;
+    }
+
+    footer {
+        position: relative;
+        background-color: #2b0546;
+        padding: 50px 10px;
+        color: white;
+        font-family: Heebo, sans-serif;
+    }
+
+    .caption h5 {
+        color: #6A0DAD;
+        background-color: white;
+        width: 40%;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .caption h1 {
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+    }
+
+    .caption p {
+        font-size: 8px;
+    }
+
+    .caption {
+        position: absolute !important;
+        top: 78px;
+        z-index: 84 !important;
+        text-align: left !important;
+        left: 25px !important;
+    }
+
+    .d-none {
+        display: block !important;
+    }
+
+    .carousel-item img {
+        height: 280px !important;
+        width: 100%;
+    }
+
+    #chatbot-icon {
+        position: fixed;
+        bottom: 15px;
+        right: 50px;
+    }
+
+    #chatbot-icon {
+        position: fixed;
+        bottom: 30px;
+        right: 10px;
+        background-color: #7e57c2;
+        color: white;
+        font-size: 20px;
+        padding: 11px;
+    }
+
+    .nav_brand {
+        font-size: 24px !important;
+        font-weight: bold;
+        color: #6A0DAD !important;
+    }
+
+
+
+
+    /* ---------------------------------------sketchbot tab---------------------------------------------  */
+
+    .caraousell_ {
+        position: relative;
+        width: 100%;
+        height: 243px;
+        background-image: url(image/AI-Chatbots.jpg);
+        background-attachment: scroll;
+        background-size: cover;
+        margin-bottom: 50px;
+        top: 45px;
+    }
+
+    .boxx img {
+        width: 67%;
+        height: 226px !important;
+        box-shadow: 7px 7px 8px black;
+    }
+
+    .chatbot-body {
+        padding: 10px;
+        height: 180px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .chatbot-input button {
+        background-color: #7e57c2;
+        color: white;
+        border: none;
+        margin-left: 67px;
+        padding: 12px 12px;
+        border-radius: 10px;
+    }
+
+    /* -----------------------------------------------learn tab--------------------------------------------  */
+
+    .caraousell {
+        position: relative;
+        width: 100%;
+        height: 280px;
+        background-image: url(image/hq720.jpg);
+        background-attachment: scroll;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+
+    /* -------------------------------------------chatbot ai---------------------------------------------  */
+
+    #chat-container {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 70px);
+        margin: 0;
+    }
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* ----------------------------------------home tab---------------------------------------------- */
+
+    .caption h5 {
+        color: #6A0DAD;
+        background-color: white;
+        width: 40%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .caption h1 {
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+    }
+
+    .caption p {
+        font-size: 15px;
+    }
+
+    .btn {
+        background-color: #6A0DAD !important;
+        color: white !important;
+        margin-left: 0px;
+    }
+
+    .prev_icon {
+        position: absolute;
+        border: 2px solid white;
+        top: 290px !important;
+        left: 688px !important;
+        padding: 20px;
+    }
+
+    .carousel-item img {
+        height: 476px !important;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .caption {
+        position: absolute;
+        top: 129px;
+        z-index: 50 !important;
+        text-align: left !important;
+        left: 42px !important;
+    }
+
+    .box i {
+        font-size: 65px;
+    }
+
+    .box h2 {
+        font-size: 25px;
+        margin-top: 26px;
+        font-weight: bold;
+    }
+
+    .box p {
+        font-size: 19px;
+        margin-top: 9px;
+    }
+
+    .box {
+        width: 100%;
+        height: 250px;
+        background-color: #cfa9eb;
+        text-align: center;
+        color: black;
+        margin-top: 67px;
+        margin-bottom: 0 !important;
+    }
+
+    .info h1 {
+        font-weight: bold;
+        margin-bottom: 6px;
+        font-size: 21px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .info h5 {
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+
+
+    }
+
+    .info_ p {
+        font-size: 13px;
+        line-height: 1;
+    }
+
+    .img {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 100px;
+        margin-top: 60px;
+    }
+
+    .info {
+        padding: 58px 0 0 30px;
+    }
+
+
+    .btn1 {
+        background-color: #6A0DAD;
+        padding: 5px 15px;
+        color: white;
+        /* margin: 0 0 0 20px; */
+    }
+
+    .boxx img {
+        width: 100%;
+        overflow: none;
+        height: 115px !important;
+        box-shadow: 7px 7px 8px black;
+    }
+
+    .para {
+        font-weight: bold;
+        font-size: 15px;
+        color: #9964c0;
+    }
+
+    .foot h1 {
+        margin-bottom: 30px;
+        font-size: 21px;
+    }
+
+    .foot p a {
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .icons i {
+        font-size: 15px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 7px;
+    }
+
+    .foot img {
+        height: 40px;
+        width: 50px;
+        margin: 2px;
+    }
+
+    footer {
+        position: relative;
+        background-color: #2b0546;
+        padding: 22px 13px;
+        color: white;
+        font-family: Heebo, sans-serif;
+    }
+
+    .bot h1 {
+        font-weight: bold;
+        font-size: 31px;
+        margin-bottom: 30px;
+    }
+
+    .bot h5 {
+        color: #6A0DAD;
+        font-weight: bold;
+        font-size: 18px;
+        display: none;
+        display: inline-block;
+    }
+
+    .foot p {
+        font-size: 11px;
+    }
+
+    .boxx .bot {
+        margin-top: 5px;
+        background: linear-gradient(135deg, #b366ff, #6a0dad);
+        color: white;
+        font-weight: 600;
+        padding: 7px 16px;
+        border-radius: 30px;
+        border: none;
+        font-size: 12px;
+    }
+
+    #chatbot-icon {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #7e57c2;
+        color: white;
+        font-size: 20px;
+        padding: 12px;
+    }
+
+
+    /* ------------------------------------------sktechbot tab--------------------------------------------  */
+
+    .caraousell_ {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-image: url(image/AI-Chatbots.jpg);
+        background-attachment: scroll;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+
+    .bot {
+        text-align: center;
+        padding: 0px 0;
+        /* background: linear-gradient(to bottom, #0d0d0d, #1a1a1a); */
+    }
+
+
+    /* ----------------------------------------------learn tab--------------------------------------------  */
+
+    .caraousell {
+        position: relative;
+        width: 100%;
+        height: 440px;
+        background-image: url(image/hq720.jpg);
+        background-attachment: scroll;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+
+    .foot h1 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .linkk {
+        font-weight: bold !important;
+        font-size: 17px !important;
+        margin: 10px 0px 8px -182px !important;
+        color: black !important;
+        border-radius: 20px !important;
+    }
+
+    .head2 {
+        color: #6a0dad;
+        padding-top: 122px;
+    }
+}
+
+
+
+/* ---------------------------------------------chatbot ai------------------------------------------  */
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 70px);
+    margin: 0px 0px;
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* --------------------------------------home tab ------------------------------------------------- */
+
+    .right-align {
+        margin-left: 35px !important;
+    }
+
+    .caption h1 {
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 40px;
+    }
+
+    .caption h5 {
+        font-size: 18px;
+        color: #6A0DAD;
+        background-color: white;
+        width: 45%;
+        font-weight: bold;
+    }
+
+    .caption p {
+        font-size: 18px;
+    }
+
+    .carousel-item img {
+        height: 468px !important;
+        width: 100%;
+    }
+
+    .caption {
+        z-index: 50 !important;
+        text-align: left !important;
+        position: absolute;
+        top: 123px;
+        left: 52px !important;
+    }
+
+    .box p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .box h2 {
+        font-size: 22px;
+        margin-top: 8px;
+        font-weight: bold;
+    }
+
+    .link {
+        font-weight: bold !important;
+        font-size: 15px !important;
+        margin: 6px;
+        border-radius: 20px !important;
+    }
+
+    .right {
+        margin-left: 87px;
+        padding-left: 0px;
+    }
+
+    .box {
+        width: 100%;
+        height: 235px;
+        background-color: #cfa9eb;
+        text-align: center;
+        color: black;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px;
+        border-radius: 5px;
+
+        box-shadow: 7px 7px 8px black;
+        transition: all 0.5s ease;
+    }
+
+    .nav_brand {
+        font-size: 19px !important;
+    }
+
+    .info h1 {
+        font-weight: bold;
+        margin-bottom: 7px;
+        font-size: 30px;
+    }
+
+    .info h5 {
+        position: relative;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .info p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .btn1 {
+        background-color: #6A0DAD;
+        padding: 5px 15px;
+        color: white;
+        /* margin: 0 0 0 20px; */
+    }
+
+    .info_ p {
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .img {
+        width: 100%;
+        height: 460px;
+        margin-bottom: 68px;
+    }
+
+    .bot h1 {
+        font-weight: bold;
+        font-size: 37px;
+        margin-bottom: 30px;
+    }
+
+    .boxx img {
+        width: 100%;
+        height: 163px;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .para {
+        font-weight: bold;
+        font-size: 25px;
+        color: #9964c0;
+    }
+
+    .foot h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .foot p a {
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .icons i {
+        font-size: 19px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .foot img {
+        height: 65px;
+        width: 79px;
+        margin: 3px;
+    }
+
+    footer {
+        position: relative;
+        background-color: #2b0546;
+        padding: 38px 14px;
+        color: white;
+        font-family: Heebo, sans-serif;
+    }
+
+    .prev_icon {
+        position: absolute;
+        border: 2px solid white;
+        top: 186px !important;
+        left: 925px !important;
+        padding: 20px;
+    }
+
+    .next_icon {
+        position: absolute;
+        border: 2px solid white;
+        top: 237px !important;
+        padding: 20px;
+    }
+
+    .boxx .bot {
+        margin-top: -2px;
+        background: linear-gradient(135deg, #b366ff, #6a0dad);
+        color: white;
+        font-weight: 600;
+        padding: 10px 14px;
+        border-radius: 30px;
+        border: none;
+        font-size: 13px;
+    }
+
+    .para {
+        font-weight: bold;
+        font-size: 15px;
+        color: #9964c0;
+    }
+
+    .chatbot-body {
+        padding: 10px;
+        height: 220px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+    /* ---------------------------------------------learn tab------------------------------------------  */
+
+    .caraousell {
+        position: relative;
+        width: 100%;
+        height: 406px;
+        background-image: url(image/hq720.jpg);
+        background-attachment: scroll;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+
+    /* ------------------------------------------sketchbot-------------------------------------------  */
+
+    .bot {
+        text-align: center;
+        padding: 0px 0;
+        /* background: linear-gradient(to bottom, #0d0d0d, #1a1a1a); */
+    }
+
+    .aos-init {
+        font-size: 25px;
+    }
+
+    /* ------------------------------------------chatbot ai--------------------------------------- */
+
+    #chat-container {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 70px);
+        margin: 0 150px;
+    }
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* -----------------------------------------------home tab----------------------------------------  */
+    /* 
+    .boxx img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 2px;
+
+    }
+
+    .carousel-item img {
+        height: 660px !important;
+        width: 100%;
+    }
+    .bot {
+    text-align: center;
+    padding: 0px 0;
+   
+}
+.info_ p {
+    font-size: 15px;
+}
+.info p {
+    font-size: 17px;
+}
+.img {
+    width: 100%;
+    height: 465px;
+    margin-bottom: 69px;
+}
+    .img {
+        width: 100%;
+        height: 457px;
+        margin-bottom: 40px;
+    } */
+
+     #chat-container {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 70px);
+        margin: 0 200px;
+    }
+
+}

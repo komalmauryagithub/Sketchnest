@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sketch Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .tabs {
+      margin-bottom: 20px;
+    }
+
+    .tabs button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .tabs button:hover {
+      background-color: #0056b3;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    #gallery-preview-container {
+      margin-top: 10px;
+      display: none;
+    }
+
+    #gallery-preview-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+    }
+
+    #gallery-display {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery-card {
+      background: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .gallery-card img {
+      width: 500px !important;
+      height: 300px !important;
+      object-fit: contain;
+      border-radius: 4px;
+      display: block;
+    }
+
+    #gallery-status {
+      margin-top: 10px;
+    }
+
+    .clear-btn {
+      margin-top: 10px;
+      background-color: #dc3545;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .clear-btn:hover {
+      background-color: #b52a34;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎨 Sketch Gallery</h1>
+
+  <div class="tabs">
+    <button onclick="showTab('upload-tab')">Upload</button>
+    <button onclick="showTab('gallery-tab')">Gallery</button>
+  </div>
+
+  <!-- Upload Tab -->
+  <div id="upload-tab" class="tab-content active">
+    <h2>Upload a Sketch</h2>
+    <input type="file" id="galleryUpload" accept="image/*" onchange="previewGalleryImage()">
+    <div id="gallery-preview-container">
+      <p>Preview:</p>
+      <img id="gallery-preview-img" alt="Preview">
+    </div>
+    <div>
+      <button onclick="submitGalleryImage()">Upload to Gallery</button>
+      <p id="gallery-status"></p>
+    </div>
+  </div>
+
+  <!-- Gallery Tab -->
+  <div id="gallery-tab" class="tab-content">
+    <h2>Your Sketches</h2>
+    <button class="clear-btn" onclick="clearGallery()">🧹 Clear Gallery</button>
+    <div id="gallery-display"></div>
+  </div>
+
+  <script>
+    // Show the active tab
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    // Preview image before uploading
+    function previewGalleryImage() {
+      const input = document.getElementById('galleryUpload');
+      const file = input.files[0];
+      const previewContainer = document.getElementById('gallery-preview-container');
+      const previewImg = document.getElementById('gallery-preview-img');
+
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          previewImg.src = e.target.result;
+          previewContainer.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        previewContainer.style.display = 'none';
+      }
+    }
+
+    // Submit image to gallery
+    function submitGalleryImage() {
+      const input = document.getElementById('galleryUpload');
+      const file = input.files[0];
+      const status = document.getElementById('gallery-status');
+
+      if (!file) {
+        alert("Please select a sketch to upload.");
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const imageData = e.target.result;
+
+        // Save to localStorage
+        const gallery = JSON.parse(localStorage.getItem("sketchGallery")) || [];
+        gallery.push(imageData);
+        localStorage.setItem("sketchGallery", JSON.stringify(gallery));
+
+        // Display it
+        addImageToGallery(imageData);
+
+        // Reset input and preview
+        input.value = '';
+        document.getElementById('gallery-preview-container').style.display = 'none';
+        status.style.color = "green";
+        status.textContent = "✅ Sketch uploaded successfully!";
+      };
+
+      reader.readAsDataURL(file);
+    }
+
+    // Add image to gallery display
+    function addImageToGallery(imageData) {
+      const galleryDisplay = document.getElementById('gallery-display');
+      const card = document.createElement('div');
+      card.className = 'gallery-card';
+
+      // Proper styling applied here via class
+      card.innerHTML = `
+        <img src="${imageData}" alt="Sketch Image">
+      `;
+
+      galleryDisplay.appendChild(card);
+    }
+
+    // Clear gallery
+    function clearGallery() {
+      localStorage.removeItem("sketchGallery");
+      document.getElementById('gallery-display').innerHTML = "";
+      alert("🧹 Gallery cleared!");
+    }
+
+    // Load gallery from storage on page load
+    window.onload = function () {
+      const savedSketches = JSON.parse(localStorage.getItem("sketchGallery")) || [];
+      savedSketches.forEach(imageData => addImageToGallery(imageData));
+    };
+  </script>
+
+</body>
+</html>

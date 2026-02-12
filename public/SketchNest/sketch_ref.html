@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sketch Practice & Feedback</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="h1">🎨 Practice Sketching</h1>
+    <p>Try drawing the reference sketch and upload your version to get feedback!</p>
+
+    <!-- Reference Sketch -->
+    <div class="reference-section">
+      <h2>📌 Reference Sketch</h2>
+      <img id="referenceImg" src="image/ref_img1.jpeg" alt="Reference Sketch">
+    </div>
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+      <h2>🖌️ Upload Your Sketch</h2>
+      <input type="file" accept="image/*" id="userSketch" />
+      <button onclick="submitSketch()">Submit & Get Feedback</button>
+    </div>
+
+    <!-- Preview Uploaded Sketch -->
+    <div class="preview" id="previewContainer" style="display: none;">
+      <h3>Your Uploaded Sketch:</h3>
+      <img id="previewImg" src="image/ref_img1.jpeg" alt="Your Sketch" />
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="feedback" id="feedbackSection"></div>
+  </div>
+  <script src="tab.js">
+  </script>
+</body>
+
+</html>

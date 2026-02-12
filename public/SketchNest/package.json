@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.19.0",
+    "openai": "^5.9.0"
+  }
+}
